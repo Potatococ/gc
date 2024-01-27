@@ -8,7 +8,7 @@
         <style>
             body {background-color: #ffdb58;}
             h3   {color: blue; text-align:center;}
-            p    {color: red;}
+            p    {color: green; margin: 0px; padding: 0px}
             td   {padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; text-align: center;}
             .lratiolol {padding-left: 20px; padding-right: 20px;}
             .firtable {border-collapse:collapse;}
@@ -31,8 +31,8 @@
                 <td>
                     Castle
                 </td>
-                <td id = "castle" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                    <p id = "castle">N/A</p>
                 </td>
                 <td>
                     0.06
@@ -42,8 +42,8 @@
                 <td>
                     Giant
                 </td>
-                <td id = "giant" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                    <p id = "giant">N/A</p>
                 </td>
                 <td>
                     0.05
@@ -52,8 +52,8 @@
                 <td>
                     Dark Bow Master
                 </td>
-                <td id = "dbm" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                    <p id = "dbm">N/A</p>
                 </td>
                 <td>
                     0.05
@@ -64,8 +64,8 @@
                 <td>
                     Dark Assassin / Sniper
                 </td>
-                <td id = "assassin" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                   <p id = "assassin">N/A</p>
                 </td>
                 <td>
                     0.04
@@ -75,8 +75,8 @@
                 <td>
                     Edward
                 </td>
-                <td id = "edward" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                    <p id = "edward">N/A</p>
                 </td>
                 <td>
                     0.03
@@ -86,8 +86,8 @@
                 <td>
                     Dark Elf
                 </td>
-                <td id = "elf" class = "damob">
-                    <font color="green">N/A</font>
+                <td>
+                    <p id = "elf">N/A</p>
                 </td>
                 <td>
                     0.025
@@ -245,7 +245,7 @@
                 var relf = 0.025;
                 var wave = parseInt(document.getElementById("wave").value);
                 
-                document.getElementById("castle").innerHTML = <font color="green">Math.round(rcastle*wave)</font>;
+                document.getElementById("castle").innerHTML = Math.round(rcastle*wave);
                 document.getElementById("giant").innerHTML = Math.round(rgiant*wave);
                 document.getElementById("dbm").innerHTML = Math.round(rdbm*wave);
                 document.getElementById("assassin").innerHTML = Math.round(rassassin*wave);
